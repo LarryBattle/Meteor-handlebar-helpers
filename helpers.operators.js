@@ -130,8 +130,7 @@ if (typeof Handlebars !== 'undefined') {
     Helpers.superScope = {};
 
     Helpers.addScope = function(name, obj) {
-      // TODO: Get rid of underscore
-      Helpers.superScope[name] = _.bind(function() { return this; }, obj);
+      Helpers.superScope[name] = Function.bind(function() { return this; }, obj);
     };
 
     Helpers.removeScope = function(name) {
