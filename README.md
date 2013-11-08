@@ -1,3 +1,32 @@
+<hr>
+## Todo
+- Change _.bind to Function.bind()
+- Convert $in to endless
+- Convert $in to endless
+- Add test conditions for $, and $in
+
+## PR Message
+
+Didn't test but should work.
+Node.js supports `Function.bind()` and underscore.js uses that function if available.
+So I just switched `_.bind()` to `Function.bind()`.
+
+Underscorejs annotated source
+http://underscorejs.org/docs/underscore.html
+
+MDN Function.bind()
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+
+<hr>
+
+
+
+
+
+
+
+
+
 #Handlebar-helpers [![Build Status](https://travis-ci.org/raix/Meteor-handlebar-helpers.png?branch=master)](https://travis-ci.org/raix/Meteor-handlebar-helpers) [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=USMGD474VJH7W)
 
 Is a simple way of using sessions and collections in the Meteor handlebars template environment
